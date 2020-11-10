@@ -1,0 +1,179 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightblue;
+}
+
+.head nav{
+    
+    margin-top: 15px;
+    margin-left:10px ;
+    
+    
+}
+
+.head nav a{
+    text-decoration: none;
+    color: red;
+    padding: 10px;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.head nav a:hover{
+    color: white;
+    background-color: tomato;
+}
+
+h2{
+    padding-bottom: 20px;
+}
+
+
+#container {
+    background-color: #003049;
+    width: 80%;
+    height: 500px;
+    margin:auto; 
+    border: 5px solid #003049;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+
+
+#container div{
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    
+}
+
+#container div:nth-of-type(1) .first{
+
+    background-color: lightcoral;
+    width: 100%;
+    height: 300px;
+
+
+}
+
+#container div:nth-of-type(2) .first{
+
+    background-color: rgb(240, 232, 128);
+    width: 100%;
+    height: 300px;
+
+}
+
+#container div:nth-of-type(3) .first{
+
+    background-color: rgb(218, 128, 240);
+    width: 100%;
+    height: 300px;
+    
+}
+
+#container div:nth-of-type(3) .first img{
+
+    background-color: rgb(218, 128, 240);
+    width: 100%;
+    height: 300px;
+    
+}
+
+
+#container .sam .first img:hover{
+    transform: scale(1.1 , 1.1);
+    box-shadow:5px 5px 8px magenta ;
+}
+
+
+#container .sam .cont {
+   width: 80%;
+   height: 70px;
+   margin: 15px auto; 
+   padding-left: 20px;
+   text-align: center;
+   padding-top: 15px;
+   background-color: tomato;
+    
+}
+
+
+#container .sam .cont:hover{
+    transform: scale(1.2 , 1.2);
+    box-shadow:5px 5px 8px magenta ;
+   
+   
+
+}
+
+
+#container .sam .cont:hover p{
+    
+   
+    font-size: 20px;
+    padding: 0;
+    padding-bottom: 20px;
+
+}
+
+
+section.sub{
+    margin: 20px;
+    padding: 20px;
+    border: solid;
+}
+
+section.sub input{
+    height: 30px;
+}
+
+section button{
+    height: 30px;
+    width: 65px;
+}
+
+
+@media screen and (max-width: 768px){
+    #container{
+        height:auto;
+    }
+
+    #container .sam .cont:hover{
+        transform: scale(1 , 1);
+        box-shadow:5px 5px 8px magenta ;
+       
+    }
+
+    #container .sam .cont:hover p{
+    
+   
+        font-size: 10px;
+        padding: 0;
+        padding-bottom: 10px;
+        
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 600px){
+    #container {
+    display: initial;
+    }
+    #container .sam {
+    width: 100%;
+    height:auto;
+    
+    
+    
+    }
+    }
